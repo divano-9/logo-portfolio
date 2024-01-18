@@ -1,0 +1,75 @@
+/*GLOBAL*/
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 1200px;
+}
+
+/*Navigation*/
+
+.navbar {
+  border-bottom: 3px solid #82929e;
+  padding: 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  font-size: 2rem;
+}
+
+.navbar .navbar-brand {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  margin-right: 10%;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  color: #9e9eac;
+}
+
+.navbar a:hover {
+  color: #213847;
+}
+
+.navbar .nav-social div {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+/*navbar social*/
+
+.navbar .nav-social .fb-full,
+.navbar .nav-social .li-full {
+  display: none;
+}
+
+.navbar .nav-social .facebook:hover .fb-empty {
+  width: 6rem;
+  display: none;
+}
+
+.navbar .nav-social .facebook:hover .fb-full {
+  display: inline-block;
+  width: 100%;
+}
+
+.navbar .nav-social .linked-in:hover .li-empty {
+  display: none;
+}
+
+.navbar .nav-social .linked-in:hover .li-full {
+  display: inline-block;
+  width: 100%;
+}
