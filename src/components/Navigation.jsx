@@ -8,7 +8,7 @@ const Navigation = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid container">
         <a className="navbar-brand" href="#">
-          <img src="src\assets\img\nav\my_logo.png" alt="DIVANO" />
+          <img src="src\assets\img\my_logo\my_logo.png" alt="DIVANO" />
         </a>
         <button
           className="navbar-toggler"
@@ -38,14 +38,14 @@ const Navigation = () => {
           <div className="facebook">
             <a className="fb-empty">
               <img
-                src="./src/assets/img/nav/icons/fb-empty.png"
+                src="./src/assets/img/icons/fb-empty.png"
                 alt="facebook"
                 className="fb-empty"
               />
             </a>
             <a className="fb-full">
               <img
-                src="./src/assets/img/nav/icons/fb-full.png"
+                src="./src/assets/img/icons/fb-full.png"
                 alt="facebook"
                 className="fb-full"
               />
@@ -54,14 +54,14 @@ const Navigation = () => {
           <div className="linked-in">
             <a className="li-empty">
               <img
-                src="./src/assets/img/nav/icons/linked-empty.png"
+                src="./src/assets/img/icons/linked-empty.png"
                 alt="linked-in"
                 className="li-empty"
               />
             </a>
             <a className="li-full">
               <img
-                src="./src/assets/img/nav/icons/linked-full.png"
+                src="./src/assets/img/icons/linked-full.png"
                 alt="linked-in"
                 className="li-full"
               />

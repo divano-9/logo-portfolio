@@ -8,7 +8,11 @@ img {
   width: 100%;
 }
 
-.wrapper {
+.vh {
+  min-height: 100vh;
+}
+
+.container {
   width: 1200px;
 }
 
@@ -23,6 +27,8 @@ img {
   width: 100%;
   z-index: 9;
   font-size: 2rem;
+  background-color: #f4f4f8 !important;
+  transition: 0.8s;
 }
 
 .navbar .navbar-brand {
@@ -46,6 +52,10 @@ img {
   height: 4rem;
   margin: 0 1rem;
   display: inline-block;
+}
+
+.navbar:has(.navbar-brand:hover) {
+  background-color: #213847 !important;
 }
 
 /*navbar social*/
@@ -72,4 +82,69 @@ img {
 .navbar .nav-social .linked-in:hover .li-full {
   display: inline-block;
   width: 100%;
+}
+
+/*Hero*/
+
+.hero-wrapper {
+  transition: 0.8s;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .hero-txt h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #213847;
+  transition: 0.6s;
+}
+
+.hero .hero-logo {
+  width: 175px;
+  height: 175px;
+  border: 3px #82929e solid;
+  border-radius: 50%;
+  padding: 35px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  background-color: #213847;
+  transition: 0.8s;
+}
+
+hr {
+  margin: 0 auto;
+  height: 1.5px;
+  background: #213847;
+  width: 80%;
+}
+
+.hero-wrapper:has(.hero-logo:hover) {
+  background-color: #213847 !important;
+}
+
+.hero-logo:hover {
+  background-color: #f4f4f8;
+}
+
+.hero:has(.hero-logo:hover) h2 {
+  color: #9e9eac;
+}
+
+/*Gallery*/
+
+.gallery div.row div {
+  padding: 2rem;
+  margin: 2.5rem;
+  margin-top: 10rem;
+}
+
+.gallery div.row div:hover {
+  background-color: #f4f4f8;
+  -webkit-box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
+  box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
 }
