@@ -38,12 +38,12 @@ img {
   margin-right: 10%;
 }
 
-.navbar a {
+.navbar .nav-link {
   margin: 0 1rem;
   color: #9e9eac;
 }
 
-.navbar a:hover {
+.navbar .nav-link:hover {
   color: #213847;
 }
 
@@ -147,4 +147,8 @@ hr {
   -webkit-box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
   -moz-box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
   box-shadow: 10px 10px 6px -4px rgba(201, 201, 201, 1);
+}
+
+.gallery .logo {
+  height: 100%;
 }

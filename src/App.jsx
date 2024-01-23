@@ -1,17 +1,24 @@
 import { useState } from "react";
-import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import Gallery from "./components/Gallery";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import ScrollToAnchor from "./utils/ScrollToAnchor";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import About from "./pages/About";
+import Logo from "./pages/Logo";
 
 function App() {
   return (
-    <>
-      <Navigation />
-      <Hero />
-      <Gallery />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" />
+          <Route path="logo/:name" element={<Logo />} />
+        </Route>
+      </Routes>
+      <ScrollToAnchor />
+    </Router>
   );
 }
 

@@ -1,15 +1,13 @@
-import { useContext } from "react";
 import { Context } from "../states/GlobalContext";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
-  const { fbSrc, setFbSrc, liSrc, setLiSrc } = useContext(Context);
-
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid container">
-        <a className="navbar-brand" href="#">
+        <Link to={"/#home"} className="navbar-brand">
           <img src="src\assets\img\my_logo\my_logo.png" alt="DIVANO" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,15 +21,18 @@ const Navigation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link" aria-current="page" href="#">
+            <Link to={"/#home"} className="nav-link">
+              Home
+            </Link>
+            <Link to={"/#gallery"} className="nav-link">
               Projects
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+            <Link className="nav-link" to={"/about"}>
               About
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+            <Link to={"/#contact"} className="nav-link">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
         <div className="navbar-nav nav-social">
