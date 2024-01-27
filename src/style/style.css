@@ -152,3 +152,134 @@ hr {
 .gallery .logo {
   height: 100%;
 }
+
+/*Contact*/
+
+.back {
+  background-color: #213847;
+  padding: 3rem 0;
+  border-top: 3px solid #82929e;
+  margin-top: 35rem;
+}
+
+.contact {
+  color: #bebec3;
+  height: 100%;
+  width: 100%;
+}
+
+.contact form .text-area {
+  height: 80px;
+}
+
+.contact .row {
+  justify-content: center;
+}
+
+.contact .btns {
+  justify-content: left;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .sub-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .sub-btn button {
+  width: 10rem;
+
+  font-size: 1.5rem;
+}
+
+.contact .copy {
+  padding-top: 10px;
+}
+
+.e-mail {
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+.contact .input-group-addon {
+  background: none;
+  border-left: none;
+}
+
+.contact form .row {
+  height: 100%;
+}
+
+.contact .error {
+  height: 40px;
+}
+
+.fa {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  z-index: 5;
+  font-size: 1.5rem;
+}
+
+.contact .form-control {
+  border-right: none;
+  resize: none;
+  border: 5px solid #82929e;
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.contact .form-control:focus {
+  border-color: rgba(151, 156, 167, 0.7);
+}
+.has-danger .form-control:focus {
+  border-color: #bd2130;
+}
+
+.has-success .form-control:focus {
+  border-color: #5cb85c;
+}
+
+.has-danger .form-control {
+  border-color: #bd2130;
+}
+
+.has-success .form-control {
+  border-color: #5cb85c;
+}
+
+.has-danger .fa {
+  color: #bd2130;
+}
+
+.has-success .fa {
+  color: #5cb85c;
+}
+
+.contact .submit-btn:hover {
+  background-color: #979ca7;
+}
+
+.bot-mail p {
+  text-indent: 0;
+}
+
+.copy #copy-btn {
+  color: #bebec3;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 1px solid #5e5e5e;
+  border-radius: 5px;
+}
+
+.copy #copy-btn:hover {
+  color: white;
+  border-color: white;
+}

@@ -1,26 +1,21 @@
 import { Context } from "../states/GlobalContext";
 import { Link, useLocation } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid container">
-        <Link to={"/#home"} className="navbar-brand">
-          <img src="src\assets\img\my_logo\my_logo.png" alt="DIVANO" />
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
+    <Navbar expand="lg">
+      <Container>
+        <Navbar.Brand>
+          <Link to={"/#home"} className="navbar-brand">
+            <img src="src\assets\img\my_logo\my_logo.png" alt="DIVANO" />
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
             <Link to={"/#home"} className="nav-link">
               Home
             </Link>
@@ -33,44 +28,54 @@ const Navigation = () => {
             <Link to={"/#contact"} className="nav-link">
               Contact
             </Link>
-          </div>
-        </div>
-        <div className="navbar-nav nav-social">
-          <div className="facebook">
-            <a className="fb-empty">
-              <img
-                src="./src/assets/img/icons/fb-empty.png"
-                alt="facebook"
-                className="fb-empty"
-              />
-            </a>
-            <a className="fb-full">
-              <img
-                src="./src/assets/img/icons/fb-full.png"
-                alt="facebook"
+          </Nav>
+          <Nav className="nav-social">
+            <div className="facebook">
+              <Link className="fb-empty">
+                <img
+                  src="./src/assets/img/icons/fb-empty.png"
+                  alt="facebook"
+                  className="fb-empty"
+                />
+              </Link>
+              <Link
                 className="fb-full"
-              />
-            </a>
-          </div>
-          <div className="linked-in">
-            <a className="li-empty">
-              <img
-                src="./src/assets/img/icons/linked-empty.png"
-                alt="linked-in"
-                className="li-empty"
-              />
-            </a>
-            <a className="li-full">
-              <img
-                src="./src/assets/img/icons/linked-full.png"
-                alt="linked-in"
+                to="https://www.facebook.com/dusan.ivanovic.33"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./src/assets/img/icons/fb-full.png"
+                  alt="facebook"
+                  className="fb-full"
+                />
+              </Link>
+            </div>
+            <div className="linked-in">
+              <Link className="li-empty">
+                <img
+                  src="./src/assets/img/icons/linked-empty.png"
+                  alt="linked-in"
+                  className="li-empty"
+                />
+              </Link>
+              <Link
                 className="li-full"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+                to="https://www.linkedin.com/in/du%C5%A1an-ivanovi%C4%87-61b950160/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./src/assets/img/icons/linked-full.png"
+                  alt="linked-in"
+                  className="li-full"
+                />
+              </Link>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

@@ -6,8 +6,8 @@ const Gallery = () => {
     <section className="gallery" id="gallery">
       <div className="container vh">
         <div
-          className="row d-flex flex-wrap justify-content-between display: flex;
-    flex-wrap: wrap; gx-0"
+          className="row justify-content-between display: flex;
+     gx-0"
           id="projects"
         >
           {logos.map((logo) => {
