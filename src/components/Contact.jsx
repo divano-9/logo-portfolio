@@ -7,7 +7,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="back">
+    <div className="contact-wrapper">
       <section className="contact container" id="contact">
         <div className="row">
           <div className="col-12 col-lg-9">

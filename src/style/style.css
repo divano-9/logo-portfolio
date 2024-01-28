@@ -12,6 +12,10 @@ img {
   min-height: 100vh;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 .container {
   width: 1200px;
 }
@@ -155,7 +159,7 @@ hr {
 
 /*Contact*/
 
-.back {
+.contact-wrapper {
   background-color: #213847;
   padding: 3rem 0;
   border-top: 3px solid #82929e;
@@ -282,4 +286,63 @@ hr {
 .copy #copy-btn:hover {
   color: white;
   border-color: white;
+}
+
+/*Logo page*/
+
+.logo-single {
+  font-size: 2rem;
+  height: 770px;
+  margin-top: 15%;
+  background-color: #213847;
+  box-shadow: 10px 10px 5px;
+  color: #bebec3;
+  position: relative;
+  overflow: hidden;
+}
+
+.l-img {
+  padding-right: 0;
+  position: relative;
+  width: 810;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-img img {
+  width: auto;
+  height: auto;
+}
+
+.logo-wrapper {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.s-background {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.s-logo {
+  z-index: 3;
+}
+
+.left {
+  padding-left: 2rem;
+  padding-top: 4rem;
+}
+
+.slider {
+  margin-bottom: 5rem;
+  border: 3px solid #82929e;
+}
+
+.slider ul {
+  margin-bottom: 0;
 }

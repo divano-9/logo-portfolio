@@ -3,6 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Logo from "../assets/img/my_logo/my_logo.png";
+import Fbfull from "../assets/img/icons/fb-full.png";
+import Fbempty from "../assets/img/icons/fb-empty.png";
+import Lifull from "../assets/img/icons/linked-full.png";
+import Liempty from "../assets/img/icons/linked-empty.png";
 
 const Navigation = () => {
   return (
@@ -10,7 +15,7 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand>
           <Link to={"/#home"} className="navbar-brand">
-            <img src="src\assets\img\my_logo\my_logo.png" alt="DIVANO" />
+            <img src={Logo} alt="DIVANO" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,11 +37,7 @@ const Navigation = () => {
           <Nav className="nav-social">
             <div className="facebook">
               <Link className="fb-empty">
-                <img
-                  src="./src/assets/img/icons/fb-empty.png"
-                  alt="facebook"
-                  className="fb-empty"
-                />
+                <img src={Fbempty} alt="facebook" className="fb-empty" />
               </Link>
               <Link
                 className="fb-full"
@@ -44,20 +45,12 @@ const Navigation = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="./src/assets/img/icons/fb-full.png"
-                  alt="facebook"
-                  className="fb-full"
-                />
+                <img src={Fbfull} alt="facebook" className="fb-full" />
               </Link>
             </div>
             <div className="linked-in">
               <Link className="li-empty">
-                <img
-                  src="./src/assets/img/icons/linked-empty.png"
-                  alt="linked-in"
-                  className="li-empty"
-                />
+                <img src={Liempty} alt="linked-in" className="li-empty" />
               </Link>
               <Link
                 className="li-full"
@@ -65,11 +58,7 @@ const Navigation = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="./src/assets/img/icons/linked-full.png"
-                  alt="linked-in"
-                  className="li-full"
-                />
+                <img src={Lifull} alt="linked-in" className="li-full" />
               </Link>
             </div>
           </Nav>
