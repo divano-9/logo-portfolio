@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComment,
@@ -6,6 +7,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   return (
     <div className="contact-wrapper">
       <section className="contact container" id="contact">
@@ -16,14 +23,26 @@ const Contact = () => {
               action="mailto:dusanivanovic@mail.com"
               method="post"
               className="contact-form"
+              onSubmit={handleSubmit((data) => console.log(data))}
             >
               <div className="row">
                 <div className="form-group col-md-6">
+                  {/* name input */}
                   <div className="input-group">
                     <input
                       type="text"
+                      {...register("name", {
+                        required: "The name field is required!",
+                        minLength: {
+                          value: 3,
+                          message: "name must be at least 3 characters",
+                        },
+                        maxLength: {
+                          value: 60,
+                          message: "name can be at most 60 characters",
+                        },
+                      })}
                       defaultValue=""
-                      name="name"
                       className="form-control"
                       placeholder="Your name"
                     />
@@ -33,15 +52,24 @@ const Contact = () => {
                       className="input-group-addon fa fa-user"
                     />
                   </div>
-                  <div className="error"></div>
+                  <div className="error">
+                    {errors.name && <p>{errors.name.message}</p>}
+                  </div>
                 </div>
 
                 <div className="form-group col-md-6">
+                  {/* email input */}
                   <div className="input-group">
                     <input
                       type="text"
                       defaultValue=""
-                      name="email"
+                      {...register("email", {
+                        required: "The emle field is required!",
+                        pattern: {
+                          value: /\S+@\S+\.\S+/,
+                          message: "Entered value does not match email format",
+                        },
+                      })}
                       className="form-control"
                       placeholder="Your email"
                     />
@@ -51,13 +79,27 @@ const Contact = () => {
                       className="input-group-addon fa fa-envelope"
                     />
                   </div>
-                  <div className="error"></div>
+                  <div className="error">
+                    {errors.email && <p>{errors.email.message}</p>}
+                  </div>
                 </div>
 
                 <div className="form-group col-12">
+                  {/* message text area */}
                   <div className="input-group">
                     <textarea
-                      name="message"
+                      {...register("message", {
+                        minLength: {
+                          value: 10,
+                          message:
+                            "The message must contain at least 10 characters!",
+                        },
+                        maxLength: {
+                          value: 250,
+                          message:
+                            "The message can have at most 250 characters",
+                        },
+                      })}
                       placeholder="Your message"
                       className="form-control text-area"
                     ></textarea>
@@ -67,11 +109,14 @@ const Contact = () => {
                       className="input-group-addon fa fa-comment"
                     />
                   </div>
-                  <div className="error"></div>
+                  <div className="error">
+                    {errors.message && <p>{errors.message.message}</p>}
+                  </div>
                 </div>
 
                 <div className="row btns">
                   <div className="col-6 col-md-3 sub-btn">
+                    {/* submit button */}
                     <button
                       type="submit"
                       defaultValue="submit"

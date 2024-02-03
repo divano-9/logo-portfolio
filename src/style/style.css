@@ -163,7 +163,7 @@ hr {
   background-color: #213847;
   padding: 3rem 0;
   border-top: 3px solid #82929e;
-  margin-top: 35rem;
+  margin-top: 20rem;
 }
 
 .contact {
@@ -345,4 +345,21 @@ hr {
 
 .slider ul {
   margin-bottom: 0;
+}
+
+/*About*/
+.about {
+  margin-top: 12rem;
+  color: #213847;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about .about-txt {
+  font-size: 2rem;
+  margin-top: 5rem;
 }
