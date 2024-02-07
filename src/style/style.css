@@ -242,28 +242,22 @@ hr {
 .contact .form-control:focus {
   border-color: rgba(151, 156, 167, 0.7);
 }
-.has-danger .form-control:focus {
+
+.has-error .form-control {
   border-color: #bd2130;
 }
 
-.has-success .form-control:focus {
-  border-color: #5cb85c;
-}
-
-.has-danger .form-control {
+.has-error .form-control:focus {
   border-color: #bd2130;
 }
 
-.has-success .form-control {
-  border-color: #5cb85c;
-}
-
-.has-danger .fa {
+.has-error .fa {
   color: #bd2130;
 }
 
-.has-success .fa {
-  color: #5cb85c;
+.has-error + .error p {
+  color: #bd2130;
+  font-size: 1.5rem;
 }
 
 .contact .submit-btn:hover {

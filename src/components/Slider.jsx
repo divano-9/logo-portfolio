@@ -1,43 +1,42 @@
-import React, { useState } from "react";
-import ReactSlidy from "react-slidy";
+import { useContext } from "react";
+import { Context } from "../states/GlobalContext";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
+import { register } from "swiper/element/bundle";
 
-const SLIDES = ["/1.jpg", "/2.jpg", "/3.jpg", "/4.jpg"];
+const Slider = () => {
+  const { id } = useContext(Context);
 
-const createStyles = (isActive) => ({
-  background: "transparent",
-  border: 0,
-  color: isActive ? "#333" : "#ccc",
-  cursor: "pointer",
-  fontSize: "32px",
-});
-
-export default () => {
-  const [actualSlide, setActualSlide] = useState(0);
-
-  const updateSlide = ({ currentSlide }) => {
-    setActualSlide(currentSlide);
+  register();
+  const onInit = () => {
+    console.log("lightGallery has been initialized");
   };
 
   return (
-    <>
-      <ReactSlidy doAfterSlide={updateSlide} slide={actualSlide}>
-        {SLIDES.map((src) => (
-          <img alt="" key={src} src={src} />
-        ))}
-      </ReactSlidy>
-      <div className="Dots">
-        {SLIDES.map((_, index) => {
-          return (
-            <button
-              key={index}
-              style={createStyles(index === actualSlide)}
-              onClick={() => updateSlide({ currentSlide: index })}
-            >
-              &bull;
-            </button>
-          );
-        })}
-      </div>
-    </>
+    <swiper-container
+      navigation="true"
+      pagination="true"
+      loop="true"
+      preventClicks="false"
+    >
+      <swiper-slide>
+        <Zoom>
+          <img
+            alt="img1"
+            src={`../../src/assets/img/logo-mockups/logo-${id}-mockup-1-L.jpg`}
+          />
+        </Zoom>
+      </swiper-slide>
+      <swiper-slide>
+        <Zoom>
+          <img
+            alt="img1"
+            src={`../../src/assets/img/logo-mockups/logo-${id}-mockup-2-L.jpg`}
+          />
+        </Zoom>
+      </swiper-slide>
+    </swiper-container>
   );
 };
+
+export default Slider;

@@ -4,8 +4,9 @@ export const Context = createContext(); // import {Context}, then useContext(Con
 
 const GlobalContext = ({ children }) => {
   const [id, setId] = useState(1);
+  const [name, setName] = useState(null);
 
-  const values = { id, setId }; // store the values that need to bee passed down to other components
+  const values = { id, setId, setName, name }; // store the values that need to bee passed down to other components
 
   return <Context.Provider value={values}>{children}</Context.Provider>;
 };

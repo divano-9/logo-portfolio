@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -5,13 +6,19 @@ import {
   faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import handleCopyClick from "../utils/handleCopyClick";
 
 const Contact = () => {
+  {
+    /*react hook form*/
+  }
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
+  const emailRef = useRef(null);
 
   return (
     <div className="contact-wrapper">
@@ -28,22 +35,22 @@ const Contact = () => {
               <div className="row">
                 <div className="form-group col-md-6">
                   {/* name input */}
-                  <div className="input-group">
+                  <div className={`input-group ${errors.name && "has-error"}`}>
                     <input
                       type="text"
                       {...register("name", {
                         required: "The name field is required!",
                         minLength: {
                           value: 3,
-                          message: "name must be at least 3 characters",
+                          message: "Name must be at least 3 characters",
                         },
                         maxLength: {
                           value: 60,
-                          message: "name can be at most 60 characters",
+                          message: "Name can be at most 60 characters",
                         },
                       })}
                       defaultValue=""
-                      className="form-control"
+                      className={`form-control`}
                       placeholder="Your name"
                     />
 
@@ -59,7 +66,7 @@ const Contact = () => {
 
                 <div className="form-group col-md-6">
                   {/* email input */}
-                  <div className="input-group">
+                  <div className={`input-group ${errors.email && "has-error"}`}>
                     <input
                       type="text"
                       defaultValue=""
@@ -86,7 +93,9 @@ const Contact = () => {
 
                 <div className="form-group col-12">
                   {/* message text area */}
-                  <div className="input-group">
+                  <div
+                    className={`input-group ${errors.message && "has-error"}`}
+                  >
                     <textarea
                       {...register("message", {
                         minLength: {
@@ -130,12 +139,21 @@ const Contact = () => {
                     <p>
                       e-mail :
                       <br />
-                      <span id="myEmail">dusanivanovic@mail.com</span>
+                      <span id="myEmail" ref={emailRef}>
+                        dusanivanovic@mail.com
+                      </span>
                     </p>
                   </div>
 
                   <div className="col-4 col-md-2 copy">
-                    <a href="#" id="copy-btn">
+                    <a
+                      href="#"
+                      id="copy-btn"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleCopyClick(emailRef.current.innerText);
+                      }}
+                    >
                       COPY E-MAIL
                     </a>
                   </div>

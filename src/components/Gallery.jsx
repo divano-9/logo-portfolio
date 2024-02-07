@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Context } from "../states/GlobalContext";
 
 const Gallery = () => {
-  const { setId } = useContext(Context);
+  const { setId, setName } = useContext(Context);
 
   return (
     <section className="gallery" id="gallery">
@@ -23,7 +23,10 @@ const Gallery = () => {
                   to={`/logo/${name}`}
                   className="logo d-flex flex-column justify-content-center"
                   id={id}
-                  onClick={() => setId(id)}
+                  onClick={() => {
+                    setId(id);
+                    setName(name);
+                  }}
                 >
                   <img src={src} alt={name} />
                 </Link>
