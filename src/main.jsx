@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import GlobalContext from "./states/GlobalContext.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/style/style.css";
+import "../src/style/responsive.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

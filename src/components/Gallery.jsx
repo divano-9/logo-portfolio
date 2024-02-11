@@ -9,16 +9,12 @@ const Gallery = () => {
   return (
     <section className="gallery" id="gallery">
       <div className="container vh">
-        <div
-          className="row justify-content-between display: flex;
-     gx-0"
-          id="projects"
-        >
+        <div className="row projects gx-0">
           {logos.map((logo) => {
             const { id, name, src } = logo;
 
             return (
-              <div className="col-md-5 col-lg-3" key={id}>
+              <div className="col-8 col-md-5 col-lg-3" key={id}>
                 <Link
                   to={`/logo/${name}`}
                   className="logo d-flex flex-column justify-content-center"

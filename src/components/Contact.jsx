@@ -25,7 +25,7 @@ const Contact = () => {
       <section className="contact container" id="contact">
         <div className="row">
           <div className="col-12 col-lg-9">
-            <h1 className="mb-3">CONTACT ME</h1>
+            <h1>CONTACT ME</h1>
             <form
               action="mailto:dusanivanovic@mail.com"
               method="post"
@@ -124,7 +124,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row btns">
-                  <div className="col-6 col-md-3 sub-btn">
+                  <div className="col-8 col-md-5 sub-btn">
                     {/* submit button */}
                     <button
                       type="submit"
@@ -135,7 +135,7 @@ const Contact = () => {
                       SUBMIT
                     </button>
                   </div>
-                  <div className="col-8 col-md-5 e-mail">
+                  <div className="col-5 col-md-3 e-mail">
                     <p>
                       e-mail :
                       <br />

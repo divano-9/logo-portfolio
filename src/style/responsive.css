@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+  .navbar .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  .navbar .nav-social {
+    margin-top: 0;
+  }
+
+  .gallery .projects {
+    justify-content: space-between;
+  }
+
+  .gallery div.row div {
+    margin: 2.5rem;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  .contact h1 {
+    text-align: left;
+  }
+
+  .contact .btns {
+    justify-content: space-between;
+  }
+
+  .contact .sub-btn {
+    justify-content: left;
+    margin-bottom: 0;
+  }
+
+  .about .about-txt {
+    padding: 0;
+  }
+
+  .l-img .s-logo {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-background {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .s-logo {
+    position: unset;
+  }
+}

@@ -13,17 +13,17 @@ const Logo = () => {
   return (
     <div className="logo-wrapper container">
       <div className=" logo-single row">
-        <div className="col-4 left">
-          <div className="slider">
+        <div className="col-xl-4 left order-2 order-xl-10 row">
+          <div className="slider col-sm-5 col-xl-12">
             <Slider />
           </div>
-          <div className="txt">
+          <div className="txt col-sm-6 col-xl-10">
             {logos[num].text.map((txt, index) => {
               return <p key={index}>{txt}</p>;
             })}
           </div>
         </div>
-        <div className="col-8 l-img">
+        <div className="col-xl-8 l-img order-1 order-xl-2">
           <img
             src={`../../src/assets/img/background/single-${id}-m.png`}
             alt="background"
