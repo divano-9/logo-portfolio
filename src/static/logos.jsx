@@ -2,7 +2,7 @@ const logos = [
   {
     id: "1",
     name: "Think-Higher",
-    src: "src/assets/img/gallery_logos/single-1-330.png",
+    src: "assets/img/gallery_logos/single-1-330.png",
     text: [
       `"Think Higher" is an investment firm, they buy web bussinesess, imporove them and then re-sell them.`,
       `Think Higher wanted a wordmark logo, which will look good both on their web page and on the company's wall.`,
@@ -12,7 +12,7 @@ const logos = [
   {
     id: "2",
     name: "Tsunami",
-    src: "src/assets/img/gallery_logos/single-2-330.png",
+    src: "assets/img/gallery_logos/single-2-330.png",
     text: [
       `"Tsunami" is an asian fusion bar, situated at the riverfront in DC`,
       `Tsunami wanted japanese wave art to be included in their logo.`,
@@ -24,7 +24,7 @@ const logos = [
   {
     id: "3",
     name: "Donnellys",
-    src: "src/assets/img/gallery_logos/single-3-330.png",
+    src: "assets/img/gallery_logos/single-3-330.png",
     text: [
       `"Donelly's" are making dairy products, mainly milk, yoghurt and cheese`,
       `The client wanted the Sun and the sky to be included, 
@@ -35,7 +35,7 @@ const logos = [
   {
     id: "4",
     name: "applejuice",
-    src: "src/assets/img/gallery_logos/single-4-330.png",
+    src: "assets/img/gallery_logos/single-4-330.png",
     text: [
       `"Applejuice" is making phone chargers, specifically for iPhones and iPads.`,
       `They wanted a logo that looks friendly and reliable and has an element that represents charging power.`,
@@ -45,7 +45,7 @@ const logos = [
   {
     id: "5",
     name: "STRIBOG",
-    src: "src/assets/img/gallery_logos/single-5-330.png",
+    src: "assets/img/gallery_logos/single-5-330.png",
     text: [
       `Entree for the compettition for Serbian fast train logo 2022.`,
       `The logo had to be in the colours of the national flag (red, blue and white) and had to embody speed.`,
@@ -56,7 +56,7 @@ const logos = [
   {
     id: "6",
     name: "Blue-Door",
-    src: "src/assets/img/gallery_logos/single-6-330.png",
+    src: "assets/img/gallery_logos/single-6-330.png",
     text: [
       `"Blue Door" is a talent recruiting agency. They connect employers with qualified employees.`,
       `Blue door wanted their logo to include doors, literal or abstract, and the main color to be blue.`,
@@ -66,7 +66,7 @@ const logos = [
   {
     id: "7",
     name: "Torte-a-Torta",
-    src: "src/assets/img/gallery_logos/single-7-330.png",
+    src: "assets/img/gallery_logos/single-7-330.png",
     text: [
       `"Torte a Torta" is a cake bar, they wanted a logo mainly for their shopfront.`,
       `They wished for a logo that's a little more feminine and abstract`,
@@ -76,7 +76,7 @@ const logos = [
   {
     id: "8",
     name: "Rapido",
-    src: "src/assets/img/gallery_logos/single-8-330.png",
+    src: "assets/img/gallery_logos/single-8-330.png",
     text: [
       `"Rapido" is in the business of car servicing and breakdown assistance, 
       they wanted a logo mainly for garage signage and their vans.`,
@@ -88,7 +88,7 @@ const logos = [
   {
     id: "9",
     name: "Divano",
-    src: "src/assets/img/gallery_logos/single-9-330.png",
+    src: "assets/img/gallery_logos/single-9-330.png",
     text: [
       `"Divano" is an up and coming Graphic/Logo designer`,
       `He wanted a lettermark logo, specificly a letter "D". 

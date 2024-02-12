@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Logo from "../assets/img/my_logo/my_logo.png";
-import Fbfull from "../assets/img/icons/fb-full.png";
-import Fbempty from "../assets/img/icons/fb-empty.png";
-import Lifull from "../assets/img/icons/linked-full.png";
-import Liempty from "../assets/img/icons/linked-empty.png";
+import Logo from "assets/img/my_logo/my_logo.png";
+import Fbfull from "assets/img/icons/fb-full.png";
+import Fbempty from "assets/img/icons/fb-empty.png";
+import Lifull from "assets/img/icons/linked-full.png";
+import Liempty from "assets/img/icons/linked-empty.png";
 
 const Navigation = () => {
   return (
