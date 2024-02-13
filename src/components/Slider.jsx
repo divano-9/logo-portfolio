@@ -23,7 +23,7 @@ const Slider = () => {
         <Zoom>
           <img
             alt="img1"
-            src={`../../src/assets/img/logo-mockups/logo-${id}-mockup-1-L.jpg`}
+            src={`/assets/img/logo-mockups/logo-${id}-mockup-1-L.jpg`}
           />
         </Zoom>
       </swiper-slide>
@@ -31,7 +31,7 @@ const Slider = () => {
         <Zoom>
           <img
             alt="img1"
-            src={`../../src/assets/img/logo-mockups/logo-${id}-mockup-2-L.jpg`}
+            src={`/assets/img/logo-mockups/logo-${id}-mockup-2-L.jpg`}
           />
         </Zoom>
       </swiper-slide>

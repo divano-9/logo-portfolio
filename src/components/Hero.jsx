@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="container vh hero-container">
         <div className="hero align-middle">
           <div className="hero-logo">
-            <img src="assets\img\my_logo\my_logo.png" alt="DIVANO" />
+            <img src="assets/img/my_logo/my_logo.png" alt="DIVANO" />
           </div>
           <div className="hero-txt">
             <h2>Dušan Ivanović</h2>

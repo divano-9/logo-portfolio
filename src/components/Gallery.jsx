@@ -24,7 +24,7 @@ const Gallery = () => {
                     setName(name);
                   }}
                 >
-                  <img src={src} alt={name} />
+                  <img src={src} alt={name} loading="lazy" />
                 </Link>
               </div>
             );

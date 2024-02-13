@@ -25,15 +25,11 @@ const Logo = () => {
         </div>
         <div className="col-xl-8 l-img order-1 order-xl-2">
           <img
-            src={`../../src/assets/img/background/single-${id}-m.png`}
+            src={logos[num].singleBackground}
             alt="background"
             className="s-background"
           />
-          <img
-            src={`../../src/assets/img/gallery_logos/single-${id}-550.png`}
-            alt="logo"
-            className="s-logo"
-          />
+          <img src={logos[num].singleSrc} alt="logo" className="s-logo" />
         </div>
       </div>
     </div>
