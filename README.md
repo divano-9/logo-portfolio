@@ -7,7 +7,7 @@ img {
 
 # My Logo Portfolio
 
-<a href="https://divano-logo-prtfolio.netlify.app" target="_blank">
+<a href="https://divano-logo-portfolio.netlify.app" target="_blank">
 PORTFOLIO LINK
 </a>
 
