@@ -1,13 +1,6 @@
-<style> 
-img {
-    width:600px;
-    height:400px
-}
-</style>
-
 # My Logo Portfolio
 
-<a href="https://divano-logo-portfolio.netlify.app" target="_blank">
+<a href="https://divano-logo-portfolio.netlify.app">
 PORTFOLIO LINK
 </a>
 
